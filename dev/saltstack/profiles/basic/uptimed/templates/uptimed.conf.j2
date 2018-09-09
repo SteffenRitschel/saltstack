@@ -1,0 +1,78 @@
+###########################################
+#### This File is managed by Saltstack ####
+###########################################
+
+## Uptimed configuration file.
+
+# Interval to write the logfile with in seconds.
+#UPDATE_INTERVAL=86400
+UPDATE_INTERVAL=3600
+
+# Maximum number of entries in logfile. Set to 0 for unlimited.
+LOG_MAXIMUM_ENTRIES=500
+
+# Minimum uptime that must be reached for it to be considered a record.
+LOG_MINIMUM_UPTIMED=1h
+
+# Minimum uptime before sending out e-mail.
+MAIL_MINIMUM_UPTIME=1d
+
+# Minimum position before sending out e-mail.
+MAIL_MINIMUM_POSITION=500
+
+# Email address to mail milestones/records to.
+# Assumes sendmail compatible MTA installed as /usr/lib/sendmail.
+# You can enable this below or with the -e option on the commandline.
+#EMAIL=<%= @email %>
+EMAIL={{ adminemail }}
+# Send email? (0 = no way, 1 = yes please!, 2 = only for milestones,
+# 3 = only for records)
+SEND_EMAIL=1
+
+# We need a sendmail compatible mailer, though.
+SENDMAIL=/usr/lib/sendmail -t
+#SENDMAIL=/usr/lib/sendmail
+
+# Where to note our PID
+PIDFILE=/run/uptimed/uptimed.pid
+
+# Milestones are configurable now.
+# Syntax is pretty easy: MILESTONE=time:description
+# Default time is in seconds, but it can be postfixed with "d", "w" or "y"
+# for days/weeks/years.
+# Keep in mind that the description needs to fit in the window.
+MILESTONE=1d:ok, seems to work for me, one Day up and running
+MILESTONE=5d:five days
+MILESTONE=1w:first week is done
+MILESTONE=10d:ten days
+MILESTONE=21d:twenty-one (half the truth) days
+MILESTONE=23d:twenty-thre (iluminated) days
+MILESTONE=25d:twenty-five days
+MILESTONE=42d:fourty two (true answers per) days
+MILESTONE=50d:fifty days
+MILESTONE=10w:ten weeks
+MILESTONE=75d:seventy-five days
+MILESTONE=100d:hundred days
+MILESTONE=150d:hundred and fifty days
+MILESTONE=25w:twenty-five weeks
+MILESTONE=200d:two hundred days
+MILESTONE=250d:250 days
+MILESTONE=300d:three hundred days
+MILESTONE=50w:fifty weeks
+MILESTONE=1y:one year
+MILESTONE=400d:four hundred days
+MILESTONE=500d:five hundred days
+MILESTONE=600d:six hundred days
+MILESTONE=666d:six hundred (sixty six evil) days
+MILESTONE=100w:hundred weeks
+MILESTONE=2y:two years alive
+MILESTONE=750d:750 days
+MILESTONE=800d:eight hundred days
+MILESTONE=900d:nine hundred days
+MILESTONE=1000d:thousand days
+MILESTONE=3y:three years
+MILESTONE=200w:twohundered weeks
+MILESTONE=4y:four years
+MILESTONE=1500d:thousand days
+MILESTONE=2000d:two thousand days
+MILESTONE=300w:three hundered weeks
