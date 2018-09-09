@@ -1,5 +1,7 @@
 linux:
   system:
+    purge_repos: true
+    refresh_repos_meta: true
     repo:
       debian:
         source: "deb http://ftp.de.debian.org/debian/ stretch main"
