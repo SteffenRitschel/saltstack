@@ -1,0 +1,5 @@
+linux:
+  system:
+    repo:
+      saltstack:
+        source: "deb http://repo.saltstack.com/apt/debian/9/amd64/latest stretch main"
