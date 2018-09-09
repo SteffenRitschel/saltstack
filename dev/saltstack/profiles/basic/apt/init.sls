@@ -21,6 +21,13 @@ apt.packages:
     - group: root
     - mode: '0644'
 
+/etc/apt/sources.list:
+  file.managed:
+    - source: salt://profiles/basic/apt/files/sources.list
+    - user: root
+    - group: root
+    - mode: '0644'
+
 /usr/local/bin/autoupdate.sh:
   file.managed:
     - source: salt://profiles/basic/apt/files/autoupdate.sh
