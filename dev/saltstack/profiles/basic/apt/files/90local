@@ -1,0 +1,5 @@
+###########################################
+#### This File is managed by Saltstack ####
+###########################################
+
+DEBIAN_FRONTEND=readline;

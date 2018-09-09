@@ -1,0 +1,8 @@
+###########################################
+#### This File is managed by Saltstack ####
+###########################################
+
+APT  {
+  Install-Recommends "False";
+  Install-Suggests "False";
+};
