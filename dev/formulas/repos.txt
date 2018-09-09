@@ -1,0 +1,5 @@
+	url = https://github.com/SteffenRitschel/hostsfile-formula.git
+	url = https://github.com/SteffenRitschel/salt-formula-docker.git
+	url = https://github.com/salt-formulas/salt-formula-linux.git
+	url = https://github.com/SteffenRitschel/salt-formula-openssh.git
+	url = https://github.com/SteffenRitschel/salt-motd-formula.git
