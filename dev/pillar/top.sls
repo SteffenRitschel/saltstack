@@ -1,8 +1,12 @@
 dev:
   '*':
     - defaults
-    - fischteich
     - data
     - users
-  #'{{ grains['fqdn'] }}':
-  #  - nodes.{{ grains['fqdn'] }}
+    - profiles.base
+    - strandsalz/{{grains['domain']}}
+  '{{ grains['fqdn'] }}':
+    - nodes/{{grains['domain']}}/{{ grains['host'] }}
+   # - {{ grains['fqdn'] }}
+  # - nodes/{{grains['domain']}}/{{ grains['fqdn'] }}
+
