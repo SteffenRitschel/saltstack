@@ -1,4 +1,4 @@
-{% set adminemail  = salt['pillar.get']('adminemail', {}) -%}
+# FIXME: MC Only when configured to install
 mc.packages:
   pkg.installed:
     - pkgs:
