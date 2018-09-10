@@ -1,6 +1,7 @@
 include:
   - defaults.apt
-  #- defaults.packages
+  - defaults.packages
   - defaults.configs
   - defaults.havegeds
-  #- defaults.network
+  - defaults.sudo
+  # - defaults.network

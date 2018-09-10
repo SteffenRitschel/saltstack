@@ -1,3 +1,4 @@
+https://github.com/SteffenRitschel/packages-formula.git
 	url = https://github.com/SteffenRitschel/hostsfile-formula.git
 	url = https://github.com/SteffenRitschel/salt-formula-docker.git
 	url = https://github.com/salt-formulas/salt-formula-linux.git
