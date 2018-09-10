@@ -3,3 +3,4 @@ include:
   - defaults.packages
   - defaults.config
   - defaults.havegeds
+  - defaults.network
