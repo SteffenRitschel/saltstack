@@ -1,6 +1,6 @@
 include:
   - defaults.apt
-  - defaults.packages
-  - defaults.config
+  #- defaults.packages
+  - defaults.configs
   - defaults.havegeds
-  - defaults.network
+  #- defaults.network
