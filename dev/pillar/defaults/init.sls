@@ -5,4 +5,5 @@ include:
   - defaults.havegeds
   - defaults.sudo
   - defaults.env
+  - defaults.rkhunter
   # - defaults.network
