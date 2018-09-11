@@ -1,6 +1,8 @@
 linux:
   system:
     package:
+      sl:
+        version: latest
       augeas-lenses:
         version: latest
       bash-completion:
@@ -37,8 +39,6 @@ linux:
         version: latest
       rsync:
         version: latest
-      sl:
-        version: latest
       tcpdump:
         version: latest
       tmux:
@@ -47,4 +47,6 @@ linux:
         version: latest
       usbutils:
         version: latest
+
+
 

@@ -1,9 +1,9 @@
 include:
   - defaults.apt
-  - defaults.packages
   - defaults.configs
-  - defaults.havegeds
-  - defaults.sudo
   - defaults.env
-  - defaults.rkhunter
+  - defaults.havegeds
   - defaults.network
+  - defaults.packages
+  - defaults.rkhunter
+  - defaults.sudo
