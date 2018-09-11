@@ -1,5 +1,6 @@
 linux:
   network:
+    enabled: true
     resolv:
       dns:
       - 8.8.4.4

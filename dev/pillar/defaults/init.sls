@@ -6,4 +6,4 @@ include:
   - defaults.sudo
   - defaults.env
   - defaults.rkhunter
-  # - defaults.network
+  - defaults.network
