@@ -4,4 +4,5 @@ include:
   - defaults.configs
   - defaults.havegeds
   - defaults.sudo
+  - defaults.env
   # - defaults.network
