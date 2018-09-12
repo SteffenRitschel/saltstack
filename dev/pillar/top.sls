@@ -5,7 +5,8 @@ dev:
     - users
     - services
     - profiles.base
-    - strandsalz/{{grains['domain']}}
+  #  - strandsalz/{{grains['domain']}}
+    - strandsalz/fischteich # TODO automatic includes
   '{{ grains['fqdn'] }}':
     - nodes/{{grains['domain']}}/{{ grains['host'] }}
    # - {{ grains['fqdn'] }}
