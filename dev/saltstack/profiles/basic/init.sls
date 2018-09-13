@@ -1,4 +1,5 @@
 include:
+  -  profiles.basic.hostname
   -  profiles.basic.apt
   -  profiles.basic.mc
   -  profiles.basic.uptimed
