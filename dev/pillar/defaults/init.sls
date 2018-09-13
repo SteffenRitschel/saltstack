@@ -8,3 +8,4 @@ include:
   - defaults.packages
   - defaults.rkhunter
   - defaults.sudo
+  - defaults.vim

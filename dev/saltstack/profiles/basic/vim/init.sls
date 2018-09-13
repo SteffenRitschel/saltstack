@@ -1,5 +1,5 @@
-vim:
-  pkg.installed
-#profiles/basic/vim:
-#pkg:
-#- installed
+include:
+  - vim
+  - vim.salt
+  - vim.nerdtree
+  - vim.pyflakes
