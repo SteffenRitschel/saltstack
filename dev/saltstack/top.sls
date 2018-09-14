@@ -2,6 +2,7 @@ dev:
   '*':
     - grains
     - roles.salt
+    - roles.bareos
     - linux
     - profiles.basic
     - profiles.users
@@ -18,3 +19,6 @@ dev:
     - roles.docker
   'roles:dockermaster':
     - roles.docker.master
+  'roles:bareosdirector':
+    - roles.bareos.director
+

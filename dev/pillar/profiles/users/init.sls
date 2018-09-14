@@ -7,6 +7,6 @@ users-formula:
 
 
 include:
-  - users.root
-  - users.systemuser
-  - users.humans
+  - profiles.users.root
+  - profiles.users.systemuser
+  - profiles.users.humans
