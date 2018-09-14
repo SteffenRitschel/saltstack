@@ -45,26 +45,26 @@ sshd_config:
   Subsystem: "sftp /usr/lib/openssh/sftp-server"
   UsePAM: 'yes'
   UseDNS: 'yes'
-  # or set as list
-  AllowUsers:
-    - vader@10.0.0.1
-    - maul@evil.com
-    - sidious
-    - luke
-  # set as string
-  DenyUsers:
-    - yoda
-    - chewbaca@112.10.21.1
-  # set as string
+# or set as list
+# AllowUsers:
+# - vader@10.0.0.1
+# - maul@evil.com
+# - sidious
+# - luke
+# set as string
+# DenyUsers:
+# - yoda
+# - chewbaca@112.10.21.1
+# set as string
   AllowGroups:
     - wheel
     - staff
     - strandsalz
     - admin
-  # set as string
-  DenyGroups:
-    - rebel
-    - badcompany
+# set as string
+#  DenyGroups:
+#  - rebel
+# - badcompany
 #  matches:
 #    sftp_chroot:
 #      type:
@@ -170,26 +170,26 @@ ssh_config:
       #KexAlgorithms: 'curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1'
       #Ciphers: 'chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr'
       #MACs: 'hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,umac-128@openssh.com'
-      KexAlgorithms:
-        - 'curve25519-sha256@libssh.org'
-        - 'diffie-hellman-group-exchange-sha256'
-        - 'diffie-hellman-group-exchange-sha1'
-        - 'diffie-hellman-group14-sha1'
-      Ciphers:
-        - 'chacha20-poly1305@openssh.com'
-        - 'aes256-gcm@openssh.com'
-        - 'aes128-gcm@openssh.com'
-        - 'aes256-ctr'
-        - 'aes192-ctr'
-        - 'aes128-ctr'
-      MACs:
-        - 'hmac-sha2-512-etm@openssh.com'
-        - 'hmac-sha2-256-etm@openssh.com'
-        - 'umac-128-etm@openssh.com'
-        - 'hmac-sha2-512'
-        - 'hmac-sha2-256'
-        - 'umac-128@openssh.com'
-
+#      KexAlgorithms:
+#        - 'curve25519-sha256@libssh.org'
+#        - 'diffie-hellman-group-exchange-sha256'
+#        - 'diffie-hellman-group-exchange-sha1'
+#        - 'diffie-hellman-group14-sha1'
+#      Ciphers:
+#        - 'chacha20-poly1305@openssh.com'
+#      - 'aes256-gcm@openssh.com'
+#        - 'aes128-gcm@openssh.com'
+#        - 'aes256-ctr'
+#        - 'aes192-ctr'
+#        - 'aes128-ctr'
+#      MACs:
+#        - 'hmac-sha2-512-etm@openssh.com'
+#        - 'hmac-sha2-256-etm@openssh.com'
+#       - 'umac-128-etm@openssh.com'
+#        - 'hmac-sha2-512'
+#        - 'hmac-sha2-256'
+#       - 'umac-128@openssh.com'
+  
 
 openssh:
   # Instead of adding a custom banner file you can set it in pillar
@@ -202,11 +202,11 @@ openssh:
 
   # Controls if SSHD should be enabled/started
   sshd_enable: true
-  #  auth:
-    #    joe-valid-ssh-key-desktop:
-      #  - user: joe
-      #  present: True
-      #  enc: ssh-rsa
+#  auth:
+#    joe-valid-ssh-key-desktop:
+#    - user: joe
+#       present: True
+#       enc: ssh-rsa
       #  comment: main key - desktop
       #  source: salt://ssh_keys/joe.desktop.pub
       #    joe-valid-ssh-key-notebook:

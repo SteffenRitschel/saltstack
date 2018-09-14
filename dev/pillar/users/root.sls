@@ -15,13 +15,14 @@ users:
       name: root
       gid: 0
     sudoonly: False
-    ssh_auth:
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCq00dj5FwSxraKWq+YO2yxkUTzO4N4Sf3yPBJbrEd2M3znHfSeFrIXSj6eNrlPir8IXCjR31EMQMfXF//IyeQCh2epcDNgrH4DzYZSkypIoTGlrvRg+HCsqbN8fnt5BVaU+57GAUvnQMLmaQ++gL7n0sO/1+UuS9sVbuNBwIWW+EcUPN0dU10GbJhS8l7KeaUDl3DmYsrlwQ1xJe2iMdDX9sGngBU3oMHLiR2E4J55g6dzVm4+EYNpY4u3Bzcym004bn5B6huEMDqzvEdmZbEdqJa0U6NJUwn7cjyC4E4ZE6mtct8vf8DzhtTCQrNVUdc1wLkS56aZqTj54AUv8ZnV steffen@sprotte
+    #ssh_auth:
+      #- ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCq00dj5FwSxraKWq+YO2yxkUTzO4N4Sf3yPBJbrEd2M3znHfSeFrIXSj6eNrlPir8IXCjR31EMQMfXF//IyeQCh2epcDNgrH4DzYZSkypIoTGlrvRg+HCsqbN8fnt5BVaU+57GAUvnQMLmaQ++gL7n0sO/1+UuS9sVbuNBwIWW+EcUPN0dU10GbJhS8l7KeaUDl3DmYsrlwQ1xJe2iMdDX9sGngBU3oMHLiR2E4J55g6dzVm4+EYNpY4u3Bzcym004bn5B6huEMDqzvEdmZbEdqJa0U6NJUwn7cjyC4E4ZE6mtct8vf8DzhtTCQrNVUdc1wLkS56aZqTj54AUv8ZnV steffen@sprotte
       #ssh_auth.absent:
         #- PUBLICKEY_TO_BE_REMOVED
     # Generates an authorized_keys file for the user
     # with the given keys
-    #ssh_auth_file:
+    ssh_auth_file:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCq00dj5FwSxraKWq+YO2yxkUTzO4N4Sf3yPBJbrEd2M3znHfSeFrIXSj6eNrlPir8IXCjR31EMQMfXF//IyeQCh2epcDNgrH4DzYZSkypIoTGlrvRg+HCsqbN8fnt5BVaU+57GAUvnQMLmaQ++gL7n0sO/1+UuS9sVbuNBwIWW+EcUPN0dU10GbJhS8l7KeaUDl3DmYsrlwQ1xJe2iMdDX9sGngBU3oMHLiR2E4J55g6dzVm4+EYNpY4u3Bzcym004bn5B6huEMDqzvEdmZbEdqJa0U6NJUwn7cjyC4E4ZE6mtct8vf8DzhtTCQrNVUdc1wLkS56aZqTj54AUv8ZnV steffen@sprotte
       #- PUBLICKEY
     # ... or you can pull them from a different pillar similar to ssh_keys_pillar
     #ssh_auth_pillar:
