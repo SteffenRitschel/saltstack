@@ -11,9 +11,9 @@ dev:
    # - /formulas/salt-motd-formula/salt/
   #  - profiles.saltstack
   #- formulas.salt-formula-linux.linux
-  'roles:saltmaster'
+  'roles:saltmaster':
     - roles.salt.master
-  'roles:docker*'
+  'roles:docker*':
     - roles.docker
-  'roles:dockermaster'
+  'roles:dockermaster':
     - roles.docker.master
