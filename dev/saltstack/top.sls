@@ -6,6 +6,7 @@ dev:
     - profiles.basic
     - profiles.users
     - rkhunter
+    - services
   #'environment:dev':
   #  - match: pillar
    # - /formulas/salt-motd-formula/salt/

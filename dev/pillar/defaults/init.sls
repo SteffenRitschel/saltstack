@@ -6,6 +6,7 @@ include:
   - defaults.havegeds
   - defaults.hosts
   - defaults.network
+  - defaults.ntp
   - defaults.packages
   - defaults.rkhunter
   - defaults.ssh
