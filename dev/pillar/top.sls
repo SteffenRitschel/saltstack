@@ -1,16 +1,13 @@
 dev:
   '*':
-    - defaults
+    - defaults  # hier werden alle defaults gesetzt.
     - data
     - users
-    - services
     - profiles.base
-  #  - strandsalz/{{grains['domain']}}
-    - strandsalz/fischteich # TODO automatic includes
-  '{{ grains['fqdn'] }}':
+    - services
+    - local  # hier sind alle localen configs eingebunden
+  '{{ grains['fqdn'] }}':  # hier werden alle configs für nodes eingebunden.
     - nodes/{{grains['domain']}}/{{ grains['host'] }}
-   # - {{ grains['fqdn'] }}
-  # - nodes/{{grains['domain']}}/{{ grains['fqdn'] }}
  # 'role:dockermaster':
   #  - match: pillar
   #  - services.docker
