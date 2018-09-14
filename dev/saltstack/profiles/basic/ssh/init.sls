@@ -1,12 +1,7 @@
-openssh-client:
-  pkg.installed
-
-/etc/ssh/ssh_config:
-  file.managed:
-    - user: root
-    - group: root
-    - mode: 644
-    - source: salt://profiles/basic/ssh/files/ssh_config
-    - require:
-      - pkg: openssh-client
-
+include:
+  - openssh
+  - openssh.banner
+  - openssh.client
+  - openssh.config
+  #- openssh.known_hosts  # FIXME ..https://github.com/SteffenRitschel/openssh-formula
+  

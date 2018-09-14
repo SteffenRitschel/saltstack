@@ -16,6 +16,10 @@ users:
     unique: False
     uid: 110
     home: /run/sshd
+    homedir_owner: root
+    homedir_group: ssh
+    user_dir_mode: 700
+    createhome: True
     shell: /usr/sbin/nologin
     prime_group:
       name: ssh

@@ -7,5 +7,6 @@ include:
   - defaults.network
   - defaults.packages
   - defaults.rkhunter
+  - defaults.ssh
   - defaults.sudo
   - defaults.vim
