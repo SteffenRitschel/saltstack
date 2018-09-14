@@ -1,0 +1,14 @@
+include:
+  - repo
+  - client
+  - director
+  - jobs
+  - storage
+  - catalog
+  - schedule
+  - fileset
+  - pool
+  - message
+  - profile
+  - filedaemon
+  - console
