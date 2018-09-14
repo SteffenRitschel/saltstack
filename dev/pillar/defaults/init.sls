@@ -2,6 +2,7 @@ include:
   - defaults.apt
   - defaults.configs
   - defaults.env
+  - defaults.git
   - defaults.havegeds
   - defaults.hosts
   - defaults.network
