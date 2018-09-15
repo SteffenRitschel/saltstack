@@ -1,14 +1,14 @@
 include:
-  - repo
-  - client
-  - director
-  - jobs
-  - storage
-  - catalog
-  - schedule
-  - fileset
-  - pool
-  - message
-  - profile
-  - filedaemon
-  - console
+  - roles.bareos.repo
+  - roles.bareos.client
+  - roles.bareos.director
+  - roles.bareos.jobs
+  - roles.bareos.storage
+  - roles.bareos.catalog
+  - roles.bareos.schedule
+  - roles.bareos.fileset
+  - roles.bareos.pool
+  - roles.bareos.message
+  - roles.bareos.profile
+  - roles.bareos.filedaemon
+  - roles.bareos.console

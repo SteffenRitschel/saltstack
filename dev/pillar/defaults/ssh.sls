@@ -61,6 +61,7 @@ sshd_config:
     - staff
     - strandsalz
     - admin
+    - root
 # set as string
 #  DenyGroups:
 #  - rebel
