@@ -10,4 +10,11 @@ linux:
           - ALL
           nopasswd:
           - true
+        admin:
+          hosts:
+          - ALL
+          commands:
+          - ALL
+          nopasswd:
+          - true
 
