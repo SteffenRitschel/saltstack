@@ -3,3 +3,5 @@
 include:
   - ntp
 {% endif %}
+
+#TODO: create an error/errormessage if user does not exist
