@@ -36,7 +36,7 @@ sshd_config:
   #AuthenticationMethods: 'publickey,keyboard-interactive'
   AuthenticationMethods: 'publickey'
   AuthorizedKeysFile: '%h/.ssh/authorized_keys'
-  X11Forwarding: 'no'
+  X11Forwarding: 'yes'
   X11DisplayOffset: 10
   PrintMotd: 'yes'
   PrintLastLog: 'yes'
@@ -141,8 +141,8 @@ ssh_config:
   Hosts:
     '*':
       StrictHostKeyChecking: no
-      ForwardAgent: no
-      ForwardX11: no
+      ForwardAgent: yes
+      ForwardX11: yes
       RhostsRSAAuthentication: no
       RSAAuthentication: yes
       PasswordAuthentication: yes
