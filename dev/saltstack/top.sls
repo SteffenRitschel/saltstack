@@ -1,11 +1,12 @@
 dev:
   '*':
     - grains
+    - profiles.users
+    - profiles.basic
+    - profiles.ssh
     - roles.salt
     - roles.bareos
     - linux
-    - profiles.basic
-    - profiles.users
     - rkhunter
     - services
   #'environment:dev':
