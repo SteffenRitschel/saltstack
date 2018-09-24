@@ -15,6 +15,7 @@ dev:
   #  - match: pillar
   #  - services.docker
   'roles:saltmaster':
+    - match: grain
     - roles.salt.master
   'roles:libvirt*':
     - roles.libvirt

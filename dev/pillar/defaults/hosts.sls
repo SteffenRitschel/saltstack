@@ -4,7 +4,8 @@ system:
     host:
       wels:
         address: 10.0.1.0
-        names: 
+        names:
+        - salt
         - saltmaster.fischteich
     #host:
     #No need to define this one if purge_hosts is true

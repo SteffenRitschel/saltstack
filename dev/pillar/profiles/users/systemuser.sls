@@ -127,4 +127,31 @@ users:
     prime_group:
       name: ssl-cert
       gid: 115
+  ntp: 
+    unique: False
+    system: True
+    uid: 117
+    home: /home/ntp
+    homedir_owner: ntp
+    homedir_group: ntp
+    user_dir_mode: 755
+    createhome: False
+    shell: /bin/false
+    prime_group:
+      name: ntp
+      gid: 117
+  mysql: 
+    unique: False
+    system: True
+    fullname: MySQL Server
+    uid: 118
+    home: /nonexistent
+    homedir_owner: root
+    homedir_group: root
+    user_dir_mode: 755
+    createhome: False
+    shell: /bin/false
+    prime_group:
+      name: mysql
+      gid: 118
 

@@ -15,6 +15,7 @@ dev:
   #  - profiles.saltstack
   #- formulas.salt-formula-linux.linux
   'roles:saltmaster':
+    - match: grain
     - roles.salt.master
   'roles:docker*':
     - roles.docker

@@ -6,6 +6,7 @@ https://github.com/SteffenRitschel/openssh-formula.git
 https://github.com/SteffenRitschel/salt-formula-git.git
 https://github.com/SteffenRitschel/salt-formula-ntp.git
 https://github.com/SteffenRitschel/bareos-formula.git
+https://github.com/saltstack-formulas/salt-formula.git
 url = https://github.com/SteffenRitschel/salt-formula-docker.git
 
 	url = https://github.com/salt-formulas/salt-formula-linux.git
